@@ -166,6 +166,6 @@ public final class PhotoMetadataUtils {
     }
 
     public static float getSizeInMB(long sizeInBytes) {
-        return Float.valueOf(new DecimalFormat("0.0").format((float) sizeInBytes / 1024 / 1024));
+        return (float) sizeInBytes / 1024 / 1024;
     }
 }
